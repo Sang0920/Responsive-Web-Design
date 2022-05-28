@@ -396,3 +396,37 @@ figcaption > .btn-link{
 }
 
 /* For index page <--*/
+
+/* For members page*/
+.mem1 > ul, .mem2 > ul, .mem3 > ul{
+    list-style: none;
+}
+.container-mems{
+    display: grid;
+    grid-template-columns: .32fr .32fr .32f;
+    grid-template-rows: auto;
+    grid-template-areas: "mem1 mem2 mem3";
+    grid-gap: 11px;
+}
+.mem1{
+    grid-area: mem1;
+
+}
+.mem2{
+    grid-area: mem2;
+    
+}
+.mem3{
+    grid-area: mem3;
+}
+@media screen and (max-width: 576px) {
+    .container-mems{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "mem1"
+        "mem2"
+        "mem3"
+        ;
+    }
+}
