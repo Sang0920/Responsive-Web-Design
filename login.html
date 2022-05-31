@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0"/>
+        <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./Bootstrap-CSS/bootstrap.css">
+        <meta name="author" content="Do The Sang">
+        <link rel="shortcut icon" href="./MEDIA/shoe.png" type="image/x-icon">
+        <title>Group-4 Shoes Shop</title>
+    </head>
+    <body>
+        <header>
+            <div class="menu">
+                <div class="bar"></div>
+            </div>
+            <div class="overlay"></div>
+            <a href="index.html" class="brand none-display"><img src="./MEDIA/shoe.png" alt="Our LOGO" width="70px"></a>
+            <nav id="navbar">
+                <a href="index.html" class="brand"><img src="./MEDIA/shoe.png" alt="" width="70px"></a>
+                <ul>
+                    <li class="my-nav-item">
+                        <a class="my-nav-link" href="men.html" title="Men Products" data-text="Men">Men</a>
+                    </li>
+                    <li class="my-nav-item">
+                        <a class="my-nav-link" href="#" title="Women Products" data-text="Women">Women</a>
+                    </li>
+                    <li class="my-nav-item">
+                        <a class="my-nav-link" href="#" title="Kids Products" data-text="Kids">Kids</a>
+                    </li>
+                    <li class="my-nav-item">
+                        <a class="my-nav-link" href="members.html" title="Menbers and Our Project Page" data-text="About Us">About Us</a>
+                    </li>
+                    <li class="my-nav-item">
+                        <a href="#" title="Your Bag"><i class="fa bi bi-bag-fill nav-icon fs-3"></i></a></i>
+                    </li>
+                    <li class="my-nav-item">
+                        <a href="login.html" title="Login"><i class="fa bi bi-person-fill nav-icon fs-3""></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="login-section">
+            <h1 class="fs-1">YOUR ACCOUNT FOR EVERYTHING</h1> 
+            <div class="login-container fs-3">
+                <form class="form" id="login">
+                    <h1 class="form_title">Login</h1>
+                    <div class="form_message form_message-error"></div>
+                    <div class="form_input-group">
+                        <input type="text" class="form_input" placeholder="Email address" autofocus required>
+                        <div class="form_input-error-message"></div>
+                    </div>
+                    <div class="form_input-group">
+                        <input type="password" class="form_input" placeholder="Password" autofocus required>
+                        <div class="form_input-error-message"></div>
+                    </div>
+                    <button class="form_button" type="submit" onclick="login()">Continue</button>
+                    <p class="form_text">
+                        <a href="./" id="linkCreateAccount" class="form_link">Don't have an account? Create account</a>
+                    </p>
+                </form>
+                <form class="form form-hidden" id="createAccount">
+                    <h1 class="form_title">Become A Member</h1>
+                    <div class="form_message form_message-error"></div>
+                    <div class="form_input-group">
+                        <input type="text" class="form_input" placeholder="Email address" autofocus required>
+                        <div class="form_input-error-message"></div>
+                    </div>
+                    <div class="form_input-group">
+                        <input type="password" class="form_input" placeholder="Password" autofocus required>
+                        <div class="form_input-error-message"></div>
+                    </div>
+                    <div class="form_input-group">
+                        <input type="password" class="form_input" placeholder="Confirm password" autofocus required>
+                        <div class="form_input-error-message"></div>
+                    </div>
+                    <button class="form_button" type="submit" onclick="signup()">Continue</button>
+                    <!-- <p class="form_text">
+                        <a href="#" class="form_link">Forgot your password?</a>
+                    </p> -->
+                    <p class="form_text">
+                        <a href="./" id="linkLogin" class="form_link">Already a Member? Sign In. </a>
+                    </p>
+                </form>
+            </div>
+        </section>
+        
+
+        <footer class="w-100">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 my-block">
+                    Product
+                    <ul>
+                        <li><a href="#">Men's</a></li>
+                        <li><a href="#">Women's</a></li>
+                        <li><a href="#">Kid's</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-6 my-block">
+                    Useful links
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Card</a></li>
+                        <li><a href="#">Favorites</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-12 my-block">
+                    Contact
+                    <ul>
+                        <li class="flex-info"><i class="bi bi-house"></i><a href="#">140 Le Trong Tan St.</a></li>
+                        <li class="flex-info"><i class="bi bi-envelope"></i><a href="#"></i>2001203004@hufi.edu.vn</a></li>
+                        <li class="flex-info"><i class="bi bi-telephone"></i><a href="#">0585878329</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-fluid notes">
+                <p>© 2022 Group 4.</p>
+                <p><i class="bi bi-github"></i><a href="https://github.com/Sang0920/Responsive-Web-Design">Source code</a></p>
+            </div>
+        </footer>
+        <script src="./JS/app.js"></script>
+        <script src="./Bootstrap-JS/bootstrap.bundle.js"></script>
+    </body>
+</html>
