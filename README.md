@@ -20,4 +20,4 @@ Reponsive Static Web Deisign with CSS and JavaScript.
 
 https://sang0920.github.io/Responsive-Web-Design/
 
-Our custom domain: http://www.group4shoesshop.cf/
+Our custom domain: https://www.group4shoesshop.cf/
