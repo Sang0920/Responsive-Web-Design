@@ -576,6 +576,12 @@ input[type=email]:not(:placeholder-shown):invalid {
     grid-gap: 10px;
 }
 
+@media screen and (max-width: 576px) {
+   .products-container{
+        grid-template-columns: .49fr .49fr;
+   }
+}
+
 .product > a > img{
     border-radius: var(--border-radius);
     width: 100%;
