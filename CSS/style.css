@@ -11,11 +11,15 @@
 :root{
     --my-blue: rgb(79, 79, 235);
     --my-light-black: rgb(49, 42, 42);
+    --border-radius: 4px;
 }
 
 html{
     font-family: 'Nunito', sans-serif;
     font-size: 10px;
+}
+body{
+    overflow-x: hidden;
 }
 header{
     width: 100%;
@@ -281,11 +285,16 @@ footer{
 .flex-info{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-evenly;
+    text-align: center;
 }
-.flex-info > a{margin-left: 5%;}
-.flex-info > i{margin-left: 25%;}
 .notes{color: white;}
+.notes > p{
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+.notes>p>a{margin-left: 1.5%;}
 /* Reponsive header (navbar) and footer <--*/
 
 
@@ -397,7 +406,10 @@ figcaption > .btn-link{
 
 /* For index page <--*/
 
-/* For members page*/
+
+
+
+/* --> For members page*/
 .mem1 > ul, .mem2 > ul, .mem3 > ul{
     list-style: none;
 }
@@ -430,3 +442,177 @@ figcaption > .btn-link{
         ;
     }
 }
+/* For members page --> */
+
+
+
+/* --> For login page */
+.login-section{
+    min-height: 70.5vh;
+    align-items: center;
+}
+.login-section > h1{
+    margin-top: 100px; /* !important for every frist section heading-> mobile view*/
+    font-size: 5.5vh;
+    text-align: center;
+}
+
+.login-container{
+    margin: 1rem auto;
+    width:  500px;
+    max-width: 70%;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .2);
+    border-radius: var(--border-radius);
+    background: #ffffff;
+}
+
+.form-hidden{
+    display: none;
+}
+
+.form > *:first-child{
+    margin-top: 0;
+}
+
+.form > *:last-child{
+    margin-bottom: 0;
+}
+
+.form_meassage{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form_message-success{
+    color: #4bb544;
+}
+
+.form_message-error{
+    color: #cc3333;
+}
+
+.form_input-group{
+    margin-bottom: 1rem;
+}
+
+.form_input{
+    display: block;
+    width: 100%;
+    padding: .75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    transition: background .2s, border-color .2s;
+}
+
+.form_input:focus{
+    background-color: #009579;
+    background: white;
+}
+
+.form_input-error{
+    color: #cc3333;
+    border-color: #cc3333;
+}
+
+.form_input-error-message{
+    margin-top: .5rem;
+    color: #cc3333;
+}
+
+.form_button{
+    width: 100%;
+    padding: 1rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    background: violet;  
+}
+
+.form_button:hover{
+    background: linear-gradient(45deg, lightblue, purple, lightblue);
+}
+
+.form_button:active{
+    transform: scale(.98);
+}
+
+.form_text{
+    text-align: center;
+}
+
+.form_link{
+    color: #252c6a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form_link:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+input[type=email]:not(:placeholder-shown):invalid {
+    color: red;
+    outline-color: red;
+}
+/* For login page <-- */
+
+
+/* --> For men's shoes page*/
+#men-sect>h1{
+    margin-top: 100px; /* !important for every frist section heading-> mobile view*/
+    text-align: left;
+}
+
+.products-container{
+    display: grid;
+    grid-template-columns: .33fr .325fr .33fr;
+    grid-gap: 10px;
+}
+
+.product > a > img{
+    border-radius: var(--border-radius);
+    width: 100%;
+}
+
+.detail{
+    text-decoration: none;
+    color: unset;
+}
+
+.sale-status{
+    color:red;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+  
+.btn:hover {
+    background-color: #ddd;
+}
+  
+.btn.active {
+    background: linear-gradient(45deg, lightblue, purple, lightblue); 
+    color: white;
+}
+
+.filterDiv {    
+    display: none; /* Hidden by default */
+}
+
+.show {
+    display: block;
+}
+
+/* For men's shoes page <--*/
