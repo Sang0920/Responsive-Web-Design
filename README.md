@@ -11,12 +11,10 @@ The aim of this module is learn the languages that developers use to build webpa
 ## Project
 
 Reponsive Static Web Deisign with CSS and JavaScript.
-### Project Topic: Selling Website
-
-This project...
+### Project Topic: Selling Website (Shoes)
 
 ## Project Due Date
-06-01-2022 23:59 AM
+06-01-2022 23:59
 
 ##
 
