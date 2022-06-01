@@ -1,116 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width,  initial-scale=1.0"/>
-        <link rel="stylesheet" href="./CSS/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="./Bootstrap-CSS/bootstrap.css">
-        <meta name="author" content="Do The Sang">
-        <link rel="shortcut icon" href="./MEDIA/shoe.png" type="image/x-icon">
-        <title>Group-4 Shoes Shop</title>
-    </head>
-    <body>
-        <header>
-            <div class="menu">
-                <div class="bar"></div>
-            </div>
-            <div class="overlay"></div>
-            <a href="index.html" class="brand none-display"><img src="./MEDIA/shoe.png" alt="Our LOGO" width="70px"></a>
-            <nav id="navbar">
-                <a href="index.html" class="brand"><img src="./MEDIA/shoe.png" alt="" width="70px"></a>
-                <ul>
-                    <li class="my-nav-item">
-                        <a class="my-nav-link" href="men.html" title="Men Products" data-text="Men">Men</a>
-                    </li>
-                    <li class="my-nav-item">
-                        <a class="my-nav-link" href="#" title="Women Products" data-text="Women">Women</a>
-                    </li>
-                    <li class="my-nav-item">
-                        <a class="my-nav-link" href="#" title="Kids Products" data-text="Kids">Kids</a>
-                    </li>
-                    <li class="my-nav-item">
-                        <a class="my-nav-link" href="members.html" title="Menbers and Our Project Page" data-text="About Us">About Us</a>
-                    </li>
-                    <li class="my-nav-item">
-                        <a href="#" title="Your Bag"><i class="fa bi bi-bag-fill nav-icon fs-3"></i></a></i>
-                    </li>
-                    <li class="my-nav-item">
-                        <a href="login.html" title="Login"><i class="fa bi bi-person-fill nav-icon fs-3""></i></a>
+
+<head>
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Bootstrap-CSS/bootstrap.css">
+    <meta name="author" content="Do The Sang">
+    <link rel="shortcut icon" href="./MEDIA/shoe.png" type="image/x-icon">
+    <title>Group-4 Shoes Shop</title>
+    <style>
+        .member1>ul,
+        .member2>ul,
+        .member3>ul {
+            list-style: none;
+        }
+
+        .h1 {
+            color: aqua;
+        }
+
+        .member1:hover {
+            display: block;
+            background-color: lightpink;
+        }
+
+        .member2:hover {
+            display: block;
+            background-color: lightgreen;
+        }
+
+        .member3:hover {
+            display: block;
+            background-color: lightseagreen;
+        }
+
+        .container-members {
+            display: grid;
+            grid-template-columns: .33fr .32fr .32f;
+            grid-template-rows: auto;
+            grid-template-areas: "member1 member2 member3";
+            grid-gap: 11px;
+            font-size: 100px;
+        }
+
+        .member1, .member2, .member3{
+            border: 1px solid lightblue;
+            background-color: violet;
+            border-radius: 25px;
+            box-shadow:
+            inset 0 -3em 3em rgba(0,0,0,0.1),
+                    0 0  0 2px rgb(255,255,255),
+                    0.3em 0.3em 1em rgba(0,0,0,0.3);
+        }
+
+        .member1 {
+            grid-area: member1;         
+        }
+
+        .member2 {
+            grid-area: member2;
+        }
+
+        .member3 {
+            grid-area: member3;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container-members {
+                background-color: lightblue;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto;
+                grid-template-areas:
+                    "member1"
+                    "member2"
+                    "member3"
+                ;
+            }
+        }
+
+        .fs-1 {
+            text-decoration: none;
+            color: red;
+        }
+
+        .fs-2 {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="bar"></div>
+        </div>
+        <div class="overlay"></div>
+        <a href="index.html" class="brand none-display"><img src="./MEDIA/shoe.png" alt="Our LOGO" width="70px"></a>
+        <nav id="navbar">
+            <a href="index.html" class="brand"><img src="./MEDIA/shoe.png" alt="" width="70px"></a>
+            <ul>
+                <li class="my-nav-item">
+                    <a class="my-nav-link" href="men.html" title="Men Products" data-text="Men">Men</a>
+                </li>
+                <li class="my-nav-item">
+                    <a class="my-nav-link" href="#" title="Women Products" data-text="Women">Women</a>
+                </li>
+                <li class="my-nav-item">
+                    <a class="my-nav-link" href="#" title="Kids Products" data-text="Kids">Kids</a>
+                </li>
+                <li class="my-nav-item">
+                    <a class="my-nav-link" href="members.html" title="Menbers and Our Project Page"
+                        data-text="About Us">About Us</a>
+                </li>
+                <li class="my-nav-item">
+                    <a href="#" title="Your Bag"><i class="fa bi bi-bag-fill nav-icon fs-3"></i></a></i>
+                </li>
+                <li class="my-nav-item">
+                    <a href="login.html" title="Login"><i class="fa bi bi-person-fill nav-icon fs-3""></i></a>
                     </li>
                 </ul>
             </nav>
         </header>
 
-        <section class="welcome-section" id="welcome-section">
-            <h1>Members</h1> 
-            <div class="container-mems">
-                <div class="mem1">
-                    <h2 class="fs-1">Do The Sang</h2>
-                    <ul class="fs-2">
-                        <li>🌱 I’m currently learning programming languages: C/C++, C#, JavaScript, and Python</li>
-                        <li>🌱 I’m currently learning programming languages: C/C++, C#, JavaScript, and Python</li>
-                        <li>🌱 I’m currently learning programming languages: C/C++, C#, JavaScript, and Python</li>
-                        <li>🌱 I’m currently learning programming languages: C/C++, C#, JavaScript, and Python</li>
-                    </ul>
-                </div>
-                <div class="mem2">
-                    <h2>Do The Sang</h2>
-                    <ul>
-                        <li>🌱 I’m currently learning programming languages: C/C++, C#, JavaScript, and Python</li>
-                        <li>🌱 I’m currently learning programming languages: C/C++, C#, JavaScript, and Python</li>
-                        <li>🌱 I’m currently learning programming languages: C/C++, C#, JavaScript, and Python</li>
-                        <li>🌱 I’m currently learning programming languages: C/C++, C#, JavaScript, and Python</li>
-                    </ul>
-                </div>
-                <div class="mem3">
-                    <h2>Do The Sang</h2>
-                    <ul>
-                        <li>🌱 I’m currently learning programming languages: C/C++, C#, JavaScript, and Python</li>
-                        <li>🌱 I’m currently learning programming languages: C/C++, C#, JavaScript, and Python</li>
-                        <li>🌱 I’m currently learning programming languages: C/C++, C#, JavaScript, and Python</li>
-                        <li>🌱 I’m currently learning programming languages: C/C++, C#, JavaScript, and Python</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section id="our-project">
-            <h1>Thong tin du an</h1>
-            
-        </section>
+        <section class=" welcome-section" id="welcome-section">
+                            <h1 style="color:blue;">Members</h1>
+                            <div class="container-members">
+                                <div class="member1">
+                                    <ul class="fs-2">
+                                        <li><a href="https://github.com/Sang0920" class="fs-1">Đỗ Thế Sang</a></li>
+                                        <li>2001203004</li>
+                                        <li>👀 I’m interested in soccer.</li>
+                                        <li>🌱 I’m currently learning programming languages: C/C++, C#, JavaScript, and
+                                            Python</li>
+                                        <li>💞️ I’m looking to collaborate on exciting projects to gain more experience.
+                                        </li>
+                                        <li>📫 Contact me: 2001203004@hufi.edu.vn or dothesang1thekdts@gmail.com.</li>
+                                    </ul>
+                                </div>
+                                <div class="member2">
+                                    <ul class="fs-2 ">
+                                        <li><a href="https://www.facebook.com/profile.php?id=100012837931467"
+                                                class="fs-1">Nguyễn Dương</a></li>
+                                        <li>2001202057</li>
+                                        <li>👀 I'm interested in playgame</li>
+                                        <li>💞️ I'm currently learning programming languages: C/C++, C#, JavaScript</li>
+                                        <li>📫 Contact me: nguyenduong27062001@gmail.com or 0369389110</li>
+                                    </ul>
+                                </div>
+                                <div class="member3">
+                                    <ul class="fs-2">
+                                        <li>Trương Quang Thuận Thiên</li>
+                                        <li><a href="https://www.facebook.com/profile.php?id=100012837931467"
+                                            class="fs-1">Nguyễn Dương</a></li>
+                                    </ul>
+                                </div>
+                                </section>
+                                <section id="notes">
+                                    <h1>Notes</h1>
+                                    <p class="fs-2">Trương Quang Thuận Thiên không đóng góp cho đồ án</p>
+                                    <p class="fs-2">Nguyễn Dương chỉ đóng góp xây dựng trang thành viên (members.html)</p>
+                                    <p class="fs-2"><i class="bi bi-github"></i><a href="https://github.com/Sang0920/Responsive-Web-Design">Source
+                                        code</a></p>
+                                    <p></p>
+                                </section>
+                                <footer class="w-100">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-6 my-block">
+                                            Product
+                                            <ul>
+                                                <li><a href="#">Men's</a></li>
+                                                <li><a href="#">Women's</a></li>
+                                                <li><a href="#">Kid's</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 my-block">
+                                            Useful links
+                                            <ul>
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Card</a></li>
+                                                <li><a href="#">Favorites</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 my-block">
+                                            Contact
+                                            <ul>
+                                                <li class="flex-info"><i class="bi bi-house"></i><a href="#">140 Le Trong Tan St.</a></li>
+                                                <li class="flex-info"><i class="bi bi-envelope"></i><a href="#"></i>2001203004@hufi.edu.vn</a></li>
+                                                <li class="flex-info"><i class="bi bi-telephone"></i><a href="#">0585878329</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="container-fluid notes">
+                                        <p>© 2022 Group 4.</p>
+                                        <p><i class="bi bi-github"></i><a href="https://github.com/Sang0920/Responsive-Web-Design">Source code</a></p>
+                                    </div>
+                                </footer>
+            <script src="./JS/app.js"></script>
+            <script src="./js copy/bootstrap.bundle.min.js"></script>
+</body>
 
-        <footer class="w-100">
-            <div class="row">
-                <div class="col-md-4 col-sm-6 my-block">
-                    Product
-                    <ul>
-                        <li><a href="#">Men's</a></li>
-                        <li><a href="#">Woen's</a></li>
-                        <li><a href="#">Kid's</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 col-sm-6 my-block">
-                    Useful links
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Card</a></li>
-                        <li><a href="#">Card</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 col-sm-12 my-block">
-                    Contact
-                    <ul>
-                        <li class="flex-info"><i class="bi bi-house"></i><a href="#">140 Le Trong Tan St.</a></li>
-                        <li class="flex-info"><i class="bi bi-envelope"></i><a href="#"></i>2001203004@hufi.edu.vn</a></li>
-                        <li class="flex-info"><i class="bi bi-telephone"></i><a href="#">0585878329</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="container-fluid notes">
-                <p>© 2022 Group 4.</p>
-                <p><i class="bi bi-github"></i><a href="https://github.com/Sang0920/Responsive-Web-Design">Source code</a></p>
-            </div>
-        </footer>
-        <script src="./JS/app.js"></script>
-        <script src="./js copy/bootstrap.bundle.min.js"></script>
-    </body>
 </html>
