@@ -187,6 +187,7 @@ nav ul{
     }
 }
 .none-display{display: none;}
+
 @media screen and (max-width: 576px){
     .brand{
         margin-left: 0;
@@ -283,11 +284,12 @@ footer{
 }
 .my-block > ul{list-style: none;}
 .flex-info{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
     text-align: center;
 }
+.flex-info > i{float: right;}
+
 .notes{color: white;}
 .notes > p{
     margin-bottom: 0;
@@ -572,19 +574,46 @@ input[type=email]:not(:placeholder-shown):invalid {
 
 .products-container{
     display: grid;
-    grid-template-columns: .33fr .325fr .33fr;
+    grid-template-columns: 3.333fr 3.33fr 3.33fr;
     grid-gap: 10px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
    .products-container{
         grid-template-columns: .49fr .49fr;
    }
 }
 
+@media screen and (max-width: 576px) {
+    .products-container{
+         grid-template-columns: .99fr;
+    }
+}
+
 .product > a > img{
     border-radius: var(--border-radius);
     width: 100%;
+}
+
+.shop{
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 2.5cm;
+    background: black;
+    color: white;
+}
+/*.shop:hover{background: linear-gradient(45deg, lightblue, purple, lightblue);}*/
+
+.shop > a{
+    text-decoration: none;
+}
+
+.shop > a:hover{
+    text-decoration: underline;
+}
+
+.shop:active{
+    transform: scale(.98);
 }
 
 .detail{
@@ -594,6 +623,7 @@ input[type=email]:not(:placeholder-shown):invalid {
 
 .sale-status{
     color:red;
+    min-height: 25px;
 }
 
 .btn {
@@ -622,3 +652,26 @@ input[type=email]:not(:placeholder-shown):invalid {
 }
 
 /* For men's shoes page <--*/
+
+
+/* --> For product page*/
+#product{
+    padding-top: 150px;
+}
+
+.product-container{
+    margin: auto;
+    display: grid;
+    grid-template-columns: .69fr .29fr;
+    grid-gap: 10px;
+}
+.imgs{
+    display: grid;
+    grid-template-columns: .49fr .49fr;
+    grid-gap: 10px;
+}
+.img1, .img2, .img3, .img4{
+    max-width: 100%;
+}
+
+/* For product page <--*/

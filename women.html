@@ -23,10 +23,10 @@
                         <a class="my-nav-link" href="men.html" title="Men Products" data-text="Men">Men</a>
                     </li>
                     <li class="my-nav-item">
-                        <a class="my-nav-link" href="#" title="Women Products" data-text="Women">Women</a>
+                        <a class="my-nav-link" href="women.html" title="Women Products" data-text="Women">Women</a>
                     </li>
                     <li class="my-nav-item">
-                        <a class="my-nav-link" href="#" title="Kids Products" data-text="Kids">Kids</a>
+                        <a class="my-nav-link" href="kids.html" title="Kids Products" data-text="Kids">Kids</a>
                     </li>
                     <li class="my-nav-item">
                         <a class="my-nav-link" href="members.html" title="Menbers and Our Project Page" data-text="About Us">About Us</a>
@@ -42,92 +42,130 @@
         </header>
 
         <section id="men-sect">
-            <h1>Men's Shoes</h1>
+            <h1>Women's Shoes</h1>
             <div id="myBtnContainer">
                 <button class="btn active fs-3" onclick="filterSelection('all')"> Show all</button>
                 <button class="btn fs-3" onclick="filterSelection('lifestyle')"> Lifestyle</button>
                 <button class="btn fs-3" onclick="filterSelection('running')"> Running</button>
+                <button class="btn fs-3" onclick="filterSelection('tennis')"> Tennis</button>
             </div>
+
             <div class="products-container">
+                <div class="filterDiv product tennis">
+                    <a href="product.html" onclick="getProductInfo(this)">
+                        <img src="./MEDIA/tennis-blue-nikecourt-air-zoom-vapor-pro-hard-court-tennis-shoe-lDZs2D.jpg" alt="">
+                    </a>
+                    <a href="product.html" onclick="getProductInfo(this)" class="detail">
+                        <p class="sale-status fs-3"></p>
+                        <p class="name fs-1">NikeCourt Air Zoom Vapor Pro</p>
+                        <p class="none-display id">8</p>
+                    </a>
+                    <p class="price fs-2">3,519,000 đ</p>
+                    <button onclick="getProductInfo(this)" class="fs-3 shop"><a href="product.html">Shop</a></button>
+                </div>
+
+                <div class="filterDiv product tennis">
+                    <a href="product.html" onclick="getProductInfo(this)">
+                        <img src="./MEDIA/tennis-black-nikecourt-react-vapor-nxt-hard-court-tennis-shoe-hJflW9.jpg" alt="">
+                    </a>
+                    <a href="product.html" onclick="getProductInfo(this)" class="detail">
+                        <p class="sale-status fs-3"></p>
+                        <p class="name fs-1">NikeCourt React Vapor NXT</p>
+                        <p class="none-display id">7</p>
+                    </a>
+                    <p class="price fs-2">4,699,000 đ</p>
+                    <button onclick="getProductInfo(this)" class="fs-3 shop"><a href="product.html">Shop</a></button>
+                </div>
+
+                <div class="filterDiv product tennis">
+                    <a href="product.html" onclick="getProductInfo(this)">
+                        <img src="./MEDIA/tennis-black-nikecourt-air-zoom-gp-turbo-naomi-osaka-clay-tennis-shoes-zJpx8L.jpg" alt="">
+                    </a>
+                    <a href="product.html" onclick="getProductInfo(this)" class="detail">
+                        <p class="sale-status fs-3">Just In</p>
+                        <p class="name fs-1">NikeCourt Air Zoom GP Turbo Naomi Osaka</p>
+                        <p class="none-display id">6</p>
+                    </a>
+                    <p class="price fs-2">4,409,000 đ</p>
+                    <button onclick="getProductInfo(this)" class="fs-3 shop"><a href="product.html">Shop</a></button>
+                </div>
+
                 <div class="filterDiv product running">
-                    <a href="#">
+                    <a href="product.html" onclick="getProductInfo(this)">
                         <img src="./MEDIA/running-yellow-zoomx-vaporfly-next-2-road-racing-shoes-J8LV0t.jpg" alt="">
                     </a>
-                    <a href="#" class="detail">
+                    <a href="product.html" onclick="getProductInfo(this)" class="detail">
                         <p class="sale-status fs-3"></p>
                         <p class="name fs-1">Nike ZoomX Vaporfly NEXT% 2</p>
+                        <p class="none-display id">5</p>
                     </a>
                     <p class="price fs-2">7,349,000 đ</p>
+                    <button onclick="getProductInfo(this)" class="fs-3 shop"><a href="product.html">Shop</a></button>
                 </div>
+
                 <div class="filterDiv product running">
-                    <a href="#">
-                        <img src="./MEDIA/running-black-parley-x-ultraboost-22-shoes.jpg" alt="">
+                    <a href="product.html" onclick="getProductInfo(this)">
+                        <img src="./MEDIA/running-air-zoom-pegasus-39-road-running-shoes-0ksHjP.jpg" alt="">
                     </a>
-                    <a href="#" class="detail">
-                        <p class="sale-status fs-3"></p>
-                        <p class="name fs-1">Parley x Ultraboost 22 Shoes</p>
+                    <a href="product.html" onclick="getProductInfo(this)" class="detail">
+                        <p class="sale-status fs-3">Promo Exclustion</p>
+                        <p class="name fs-1">Nike Air Zoom Pengasus 39</p>
+                        <p class="none-display id">4</p>
                     </a>
-                    <p class="price fs-2">6,499,000 đ</p>
+                    <p class="price fs-2">3,519,000 đ</p>
+                    <button onclick="getProductInfo(this)" class="fs-3 shop"><a href="product.html">Shop</a></button>
                 </div>
+                
                 <div class="filterDiv product running">
-                    <a href="#">
+                    <a href="product.html" onclick="getProductInfo(this)">
                         <img src="./MEDIA/running-white-zoomx-invincible-run-flyknit-2-road-running-shoes-xrCMmF.jpg" alt="">
                     </a>
-                    <a href="#" class="detail">
+                    <a href="product.html" onclick="getProductInfo(this)" class="detail">
+                        <p class="none-display id">3</p>
                         <p class="sale-status fs-3"></p>
                         <p class="name fs-1">Nike Zoom Invincible Run Flyknit 2</p>
                     </a>
                     <p class="price fs-2">5,279,000 đ</p>
-                </div>               
+                    <button onclick="getProductInfo(this)" class="fs-3 shop"><a href="product.html">Shop</a></button>
+                </div>   
+
                 <div class="product filterDiv lifestyle">
-                    <a href="#">
+                    <a href="product.html" onclick="getProductInfo(this)">
                         <img src="./MEDIA/lifestyle-white-go-flyease-shoes-3svRCL.jpg" alt="">
                     </a>
-                    <a href="#" class="detail">
+                    <a href="product.html" onclick="getProductInfo(this)" class="detail">
                         <p class="sale-status fs-3">Bestseller</p>
                         <p class="name fs-1">Nike Go FlyEase</p>
+                        <p class="none-display id">2</p>
                     </a>
                     <p class="price fs-2">3,829,000 đ</p>
+                    <button onclick="getProductInfo(this)" class="fs-3 shop"><a href="product.html">Shop</a></button>
                 </div>
+
                 <div class="product filterDiv lifestyle">
-                    <a href="#">
-                        <img src="./MEDIA/lifestyle-black-go-flyease-shoe-5nWPkx.jpg" alt="">
-                    </a>
-                    <a href="#" class="detail">
-                        <p class="sale-status fs-3">Promo Exclustion</p>
-                        <p class="name fs-1">Nike Go FlyEase</p>
-                    </a>
-                    <p class="price fs-2">3,519,000 đ</p>
-                </div>
-                <div class="product filterDiv lifestyle">
-                    <a href="#">
+                    <a href="product.html" onclick="getProductInfo(this)">
                         <img src="./MEDIA/lifestyle-blue-air-presto-hello-kitty-shoes-Nm5Dd5.jpg" alt="">
                     </a>
-                    <a href="#" class="detail">
+                    <a href="product.html" onclick="getProductInfo(this)" class="detail">
                         <p class="sale-status fs-3">Promo Exclustion</p>
                         <p class="name fs-1">Nike Air Presto x Hello Kitty ®</p>
+                        <p class="none-display id">1</p>
                     </a>
-                    <p class="price fs-2">3,829,000 đ</p>
+                    <p class="price fs-2">4,109,000 đ</p>
+                    <button onclick="getProductInfo(this)" class="fs-3 shop"><a href="product.html">Shop</a></button>
                 </div>
+
                 <div class="product filterDiv lifestyle">
-                    <a href="#">
+                    <a href="product.html" onclick="getProductInfo(this)">
                         <img src="./MEDIA/lifestyle-black-air-max-pre-day-shoes-jMh2rB.jpg" alt="">
                     </a>
-                    <a href="#" class="detail">
+                    <a href="product.html" onclick="getProductInfo(this)" class="detail">
                         <p class="sale-status fs-3">Sustainable Materials</p>
                         <p class="name fs-1">Nike Air Max Pre-Day</p>
+                        <p class="none-display id">0</p>
                     </a>
                     <p class="price fs-2">3,829,000 đ</p>
-                </div>
-                <div class="product filterDiv lifestyle">
-                    <a href="#">
-                        <img src="./MEDIA/lifestyle-black-vista-sandals-1rGmxQ.jpg" alt="">
-                    </a>
-                    <a href="#" class="detail">
-                        <p class="sale-status fs-3">Just In</p>
-                        <p class="name fs-1">Nike Vista</p>
-                    </a>
-                    <p class="price fs-2">1,609,000 đ</p>
+                    <button onclick="getProductInfo(this)" class="fs-3 shop"><a href="product.html">Shop</a></button>
                 </div>
             </div>
         </section>
@@ -163,6 +201,7 @@
                 <p><i class="bi bi-github"></i><a href="https://github.com/Sang0920/Responsive-Web-Design">Source code</a></p>
             </div>
         </footer>
+        <script src="./JS/database.js"></script>
         <script src="./JS/app.js"></script>
         <script src="./Bootstrap-JS/bootstrap.bundle.js"></script>
     </body>

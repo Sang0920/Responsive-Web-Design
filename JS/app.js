@@ -81,3 +81,12 @@ function RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 /* Script for prodcut list page <-- */
+
+let id = 0;
+
+function getProductInfo(elem){
+    let parent = elem.parentNode;
+    let id = parent.querySelector('.id').innerHTML;
+    localStorage.setItem('number', id);
+    //alert("this is " + id);
+}
