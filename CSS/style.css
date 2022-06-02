@@ -675,7 +675,13 @@ input[type=email]:not(:placeholder-shown):invalid {
         overflow: auto;
     }
     .details{
-        margin: auto 25px ;
+        margin: auto 25px;
+        padding: 15px;
+        border: 1px solid violet;
+        box-shadow:  inset 0 -3em 3em rgba(0,0,0,0.1),
+        0 0  0 2px rgb(255,255,255),
+        0.3em 0.3em 1em rgba(0,0,0,0.3);;
+        border-radius: 15px;
     }
     .img1, .img2, .img3, .img4{
         display: inline-block;
