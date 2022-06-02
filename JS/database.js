@@ -98,4 +98,81 @@ const db = [
         img3: "./MEDIA/8/3.jpg",
         img4: "./MEDIA/8/4.jpg"
     },
+    {
+        id: 9,
+        name: "Nike Phantom GT2 Academy MG",
+        _status: "",
+        price: "2,479,000₫",
+        text: "Building on the Phantom GT, the Nike Phantom GT2 MG has an updated design and patterning that is engineered to help you place your shots with pinpoint accuracy. Off-centre lacing provides a clean strike zone to help you dribble, pass and score with precision.",
+        img1: "./MEDIA/9/1.jpg",
+        img2: "./MEDIA/9/2.jpg",
+        img3: "./MEDIA/9/3.jpg",
+        img4: "./MEDIA/9/4.jpg"
+    },
+    {
+        id: 10,
+        name: "Nike Mercurial Vapor 14 Elite FG",
+        _status: "",
+        price: "7,319,000₫",
+        text: "The Nike Mercurial Vapor 14 Elite FG features a new look with specialised components to let you play your fastest from start to finish. A cushioned insole gives you non-stop comfort, and the innovative plate provides instant responsiveness for quicker cuts at high speeds.",
+        img1: "./MEDIA/10/1.jpg",
+        img2: "./MEDIA/10/2.jpg",
+        img3: "./MEDIA/10/3.jpg",
+        img4: "./MEDIA/10/4.jpg"
+    },
+    {
+        id: 11,
+        name: "Air Jordan XXXVI PF",
+        _status: "",
+        price: "5,439,000₫",
+        text: "The Air Jordan XXXVI isn't just the next shoe up in the iconic franchise; it's an expression of the drive and energy that sparked a basketball revolution.It's one of the lightest Air Jordan game shoes to date, featuring a minimal but durable leno-weave upper reinforced with a TPU ribbon and synthetic overlays.It also comes equipped with a full-length Zoom Air Strobel unit stitched directly to the upper, stacked with a Zoom Air unit underneath the forefoot, providing a sensation of energy return and elite responsiveness.Step on the court with the confidence that whatever you do—it's light work.This PF version uses an extra-durable outsole that's designed for outdoor courts.",
+        img1: "./MEDIA/11/1.jpg",
+        img2: "./MEDIA/11/2.jpg",
+        img3: "./MEDIA/11/3.jpg",
+        img4: "./MEDIA/11/4.jpg"
+    },
+    {
+        id: 12,
+        name: "Air Jordan 1 Zoom Cmft",
+        _status: "Promo Exclustion",
+        price: "4,109,000₫",
+        text: "Making iconic style even more comfortable. The Air Jordan 1 Zoom Cmft remakes the 1st Air Jordan with lightweight, low-profile cushioning and elements that improve wearability. Leathers and textiles in the upper have a broken-in feel. A lined, padded collar cups the heel for a secure fit.",
+        img1: "./MEDIA/12/1.jpg",
+        img2: "./MEDIA/12/2.jpg",
+        img3: "./MEDIA/12/3.jpg",
+        img4: "./MEDIA/12/4.jpg"
+    },
+    {
+        id: 13,
+        name: "Jordan Why Not .5 PF",
+        _status: "",
+        price: "3,829,000₫",
+        text: "Russell Westbrook is fast. The Jordan Why Not .5 helps keep him contained with updated cushioning, data-informed traction and a full-foot fit system that keeps him in control. It has the rugged utility look of a trail running shoe combined with the on-purpose clash of colours and materials at the core of Why Not?        ",
+        img1: "./MEDIA/13/1.jpg",
+        img2: "./MEDIA/13/2.jpg",
+        img3: "./MEDIA/13/3.jpg",
+        img4: "./MEDIA/13/4.jpg"
+    },
+    {
+        id: 14,
+        name: "Air Jordan XXXVI Low",
+        _status: "Just In",
+        price: "5,129,000₫",
+        text: "From the perimeter to the hoop, take the court with confidence. This is one of the lightest Air Jordan game shoes to date, with a minimal but durable leno-weave upper reinforced with tough plastic details. Meanwhile, Zoom Air cushioning delivers energy return and elite responsiveness. The game asks for everything—now you have the shoe to match.        ",
+        img1: "./MEDIA/14/1.jpg",
+        img2: "./MEDIA/14/2.jpg",
+        img3: "./MEDIA/14/3.jpg",
+        img4: "./MEDIA/14/4.jpg"
+    },
+    {
+        id: 15,
+        name: "Nike Vista",
+        _status: "Just In",
+        price: "1,609,000₫",
+        text: "With all of the necessary elements you need for a day out (like plush padding and easy-to-style colours), the Nike Vista delivers on less is more. Lightweight, airy and supportive, it lets you bridge city living and nature with the pull of a strap.        ",
+        img1: "./MEDIA/15/1.jpg",
+        img2: "./MEDIA/15/2.jpg",
+        img3: "./MEDIA/15/3.jpg",
+        img4: "./MEDIA/15/4.jpg"
+    },
 ]
