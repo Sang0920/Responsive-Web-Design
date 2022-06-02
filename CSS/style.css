@@ -289,7 +289,6 @@ footer{
     text-align: center;
 }
 .flex-info > i{float: right;}
-
 .notes{color: white;}
 .notes > p{
     margin-bottom: 0;
@@ -664,6 +663,23 @@ input[type=email]:not(:placeholder-shown):invalid {
     display: grid;
     grid-template-columns: .69fr .29fr;
     grid-gap: 10px;
+}
+@media screen and (max-width: 768px) {
+    .product-container{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .imgs{
+        display: unset !important;
+        white-space: nowrap;
+        overflow: auto;
+    }
+    .details{
+        margin: auto 25px ;
+    }
+    .img1, .img2, .img3, .img4{
+        display: inline-block;
+    }
 }
 .imgs{
     display: grid;
