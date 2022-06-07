@@ -191,6 +191,30 @@ const db = [
         img3: "./MEDIA/15/3.jpg",
         img4: "./MEDIA/15/4.jpg"
     },
+    {
+        id: 16,
+        name: "Nike Air Max 90",
+        _status: "",
+        price: "1,659,000₫",
+        money: 1659000,
+        text: "The Nike Air Max 90 takes the original look to a new level with more comfort and flexibility.It keeps the classic Max Air cushioning you know and love.        ",
+        img1: "./MEDIA/16/1.jpg",
+        img2: "./MEDIA/16/2.jpg",
+        img3: "./MEDIA/16/3.jpg",
+        img4: "./MEDIA/16/4.jpg"
+    },
+    {
+        id: 17,
+        name: "Nike Flex Runner 2",
+        _status: "",
+        price: "1,659,000₫",
+        money: 1659000,
+        text: "From the chalky midsole to rainbows on the pull tabs, the Nike Flex Runner 2 brings messy pavement chalk fun to little feet—with NO clean-up needed! They're also lace-free, meaning they're super quick to slip on and off. The straps and bootie-like feel make sure your kid's fit is snug for unlimited play.",
+        img1: "./MEDIA/16/1.jpg",
+        img2: "./MEDIA/16/2.jpg",
+        img3: "./MEDIA/16/3.jpg",
+        img4: "./MEDIA/16/4.jpg"
+    },
 ]
 
 

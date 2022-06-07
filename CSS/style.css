@@ -726,6 +726,7 @@ input[type=email]:not(:placeholder-shown):invalid {
     flex-direction: row;
     justify-content: space-evenly;
     text-align: left;
+    border: black 1px solid;
 }
 .summary{
     grid-area: summary;
