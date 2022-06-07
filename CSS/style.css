@@ -730,4 +730,21 @@ input[type=email]:not(:placeholder-shown):invalid {
 .summary{
     grid-area: summary;
 }
+.cart-form{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cart-form > label{
+    display: flex;
+    flex-direction: column;
+}
+.cart-form > label > input{
+    height: 45px;
+}
+.myLi > button{
+    padding: 5px 5px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
 /* For cart page <---*/
