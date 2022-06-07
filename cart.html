@@ -41,6 +41,18 @@
             </nav>
         </header>
 
+        <section id="sect-cart">
+            <h1 class="fs-1">Bag</h1>
+            <div class="bag-container fs-2">
+                <div class="bag">
+
+                </div>
+                <div class="summary">
+                    <div>Total</div>
+                    <div class="total"></div>
+                </div>
+            </div>
+        </section>
 
         <footer class="w-100">
             <div class="row">
@@ -74,6 +86,94 @@
             </div>
         </footer>
         <script src="./JS/app.js"></script>
+        <script src="./JS/database.js"></script>
+        <script>
+            /*
+            function addItemToCart(id){
+                for(var i in cart){
+                    if(cart[i].id === id){
+                        cart[i].count ++;
+                        return;
+                    }
+                }
+                var item = new Item(id, db[id].name, db[id].img1, db[id].money, 1);
+                cart.push(item)
+            }
+            */
+           
+            setCount()
+            loadInfo()
+
+            function setCount(){
+                LoadCart()
+                for(var i in Cart){
+                    Cart[i].count = 1;
+                }
+                SaveCart()
+            }
+
+           function loadInfo(){
+                LoadCart()
+                //console.log(Cart)
+                let bag = document.querySelector('.bag')
+                let len = Cart.length
+                let text = "<ul>"
+                for(let i = 0; i<len; i++){
+                    text += '<li class="myLi">'
+                        + '<img class="cart-img">'
+                        + "<div>" + Cart[i].name + "</div>"
+                        + '<div class="price">' + Cart[i].price +'</div>'
+                    + "</li>";
+                    bag.innerHTML = text
+                    let li = bag.querySelector('.myLi')
+                    li.querySelector('.cart-img').src = Cart[i].img1
+                    bag.innerHTML = ""
+                    bag.innerHTML += li
+                }
+                text += "</ul>"
+                bag.innerHTML = text
+
+                let summary = document.querySelector('.summary')
+                summary.querySelector('.total').innerHTML = totalCart() + "<span>₫</span>"
+           }
+
+            function removeItemFromCart(id){
+                for(var i in cart){
+                    if(cart[i].id === id){
+                        cart[i].count --;
+                        if(cart[i].count === 0){
+                            cart.splice(i, 1);
+                        }
+                        break;
+                    }
+                }
+            }
+            function deleteItemFromCart(id){
+                for(var i in cart){
+                    if(cart[i].id === id){
+                        cart.splice(i, 1);
+                        break;
+                    }
+                }
+            }
+            function clearCart(){cart=[]}
+            function countCart(){
+                var total = 0
+                for(var i in cart){
+                    total += cart[i].count;
+                }
+                return total;
+            }
+            function totalCart(){
+                var total = 0
+                LoadCart()
+                for(var i in Cart){
+                    total += Cart[i].money * Cart[i].count
+                }
+                console.log(Cart)
+                return total
+            }
+        </script>
         <script src="./Bootstrap-JS/bootstrap.bundle.js"></script>
     </body>
 </html>

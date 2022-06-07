@@ -697,3 +697,37 @@ input[type=email]:not(:placeholder-shown):invalid {
 }
 
 /* For product page <--*/
+
+
+/* --> For cart page*/
+#sect-cart{
+    padding-top: 105px;
+}
+#sect-cart >h1{
+    text-align: center;
+}
+.bag-container{
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: "bag summary";
+    grid-gap: 10px;
+}
+.bag{
+    grid-area: bag;
+}
+.bag > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.bag>ul>li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: left;
+}
+.summary{
+    grid-area: summary;
+}
+/* For cart page <---*/

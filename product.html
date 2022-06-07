@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./Bootstrap-CSS/bootstrap.css">
         <meta name="author" content="Do The Sang">
         <link rel="shortcut icon" href="./MEDIA/shoe.png" type="image/x-icon">
+        <script src="./JS/database.js"></script>
         <title>Group-4 Shoes Shop</title>
     </head>
     <body>
@@ -50,10 +51,11 @@
                     <img src="" alt="" class="img4">
                 </div>
                 <div class="details">
+                    <p class="none-display id"></p>
                     <p class="sale-status fs-3"></p>
                     <p class="name fs-1"></p>
                     <p class="price fs-2"></p>
-                    <button class="fs-3 shop">Add to Cart</button>
+                    <button class="fs-3 shop" onclick="AddToCart(this)">Add to Cart</button>
                     <p class="info fs-2"></p>
                 </div>
             </div>
@@ -90,13 +92,13 @@
                 <p><i class="bi bi-github"></i><a href="https://github.com/Sang0920/Responsive-Web-Design">Source code</a></p>
             </div>
         </footer>
-        <script src="./JS/database.js"></script>
         <script>
             let num = localStorage.getItem('number');
             //alert("This is " + db[num].name);
             getInfo();
             function getInfo(){
-                var details = document.querySelector('.details');   
+                var details = document.querySelector('.details');  
+                details.querySelector('.id').innerHTML = db[num].id; 
                 details.querySelector('.name').innerHTML = db[num].name;
                 details.querySelector('.sale-status').innerHTML = db[num]._status;
                 details.querySelector('.price').innerHTML = db[num].price;

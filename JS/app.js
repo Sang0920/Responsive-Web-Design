@@ -82,6 +82,7 @@ function RemoveClass(element, name) {
 }
 /* Script for prodcut list page <-- */
 
+
 let id = 0;
 
 function getProductInfo(elem){
@@ -89,4 +90,20 @@ function getProductInfo(elem){
     let id = parent.querySelector('.id').innerHTML;
     localStorage.setItem('number', id);
     //alert("this is " + id);
+}
+
+
+function AddToCart(elmt){
+  let parent = elmt.parentNode;
+  let id = parent.querySelector('.id').innerHTML;
+  alert("Added " + db[id].name + " to Your Cart!");
+  LoadCart()
+  for(var i in Cart){
+    if(Cart[i].id == id){
+        //Cart[i].count ++;
+        return; 
+    }
+  }
+  Cart.push(db[id])
+  SaveCart()
 }
